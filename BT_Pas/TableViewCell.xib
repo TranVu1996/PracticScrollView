@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="BT_Pas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDv-PR-t5u">
+                        <rect key="frame" x="0.0" y="0.0" width="435" height="151"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyj-SV-Gfs">
+                                <rect key="frame" x="16" y="65.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="H1" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-jI-71x">
+                                <rect key="frame" x="355" y="50.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="IM6-Py-qcW"/>
+                                    <constraint firstAttribute="height" constant="50" id="Lk6-oI-ohj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqV-Dh-fse">
+                                <rect key="frame" x="89.5" y="65" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vyj-SV-Gfs" firstAttribute="leading" secondItem="JDv-PR-t5u" secondAttribute="leading" constant="16" id="7tw-Qa-0Qf"/>
+                            <constraint firstItem="sqV-Dh-fse" firstAttribute="centerY" secondItem="JDv-PR-t5u" secondAttribute="centerY" id="ZYr-o8-UvY"/>
+                            <constraint firstAttribute="trailing" secondItem="Cdw-jI-71x" secondAttribute="trailing" constant="30" id="nD5-nF-2u2"/>
+                            <constraint firstItem="Cdw-jI-71x" firstAttribute="centerY" secondItem="JDv-PR-t5u" secondAttribute="centerY" id="oQN-zD-pj6"/>
+                            <constraint firstItem="Vyj-SV-Gfs" firstAttribute="centerY" secondItem="JDv-PR-t5u" secondAttribute="centerY" id="rtL-GR-gc2"/>
+                            <constraint firstItem="sqV-Dh-fse" firstAttribute="leading" secondItem="Vyj-SV-Gfs" secondAttribute="trailing" constant="32" id="xkA-wK-w8a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JDv-PR-t5u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H4C-5Y-Snw"/>
+                    <constraint firstAttribute="bottom" secondItem="JDv-PR-t5u" secondAttribute="bottom" id="gn5-ep-1qV"/>
+                    <constraint firstItem="JDv-PR-t5u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="m6c-wz-3Af"/>
+                    <constraint firstAttribute="trailing" secondItem="JDv-PR-t5u" secondAttribute="trailing" id="uKx-i6-tRt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageView" destination="Cdw-jI-71x" id="A10-b0-nGL"/>
+                <outlet property="lableNames" destination="Vyj-SV-Gfs" id="TMf-pF-ezq"/>
+                <outlet property="lblSTT" destination="Vyj-SV-Gfs" id="Dmh-Sj-Az3"/>
+                <outlet property="logoImageView" destination="Cdw-jI-71x" id="htc-T5-fg4"/>
+            </connections>
+            <point key="canvasLocation" x="215.21739130434784" y="122.20982142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="H1" width="1536" height="864"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
